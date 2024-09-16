@@ -1,22 +1,14 @@
 #!/usr/bin/env bash
-<<<<<<< HEAD:note_taking.sh
-
-# some variables
-note_name="$(date +%d/%m/%Y)"
-=======
-# some variables
 note_name="$(date +%d-%m-%Y)"
->>>>>>> ba82169 (ok):note.sh
-note_title="$(date +%A,' '%d/%m/%Y)"
-note_time="$(date +%H:%M)"
-# note name and directory
+current_date="$(date +%A,' '%d/%m/%Y)"
+current_time="$(date +%H:%M)"
 my_note="$HOME/notes/${note_name}.md"
 
-[ ! -f ${my_note} ] && echo "## Your notes for: ${note_title}" >${my_note}
+[ ! -f ${my_note} ] && echo "## Your notes for: ${current_date}" >${my_note}
 
 layout=(
   "normal G2o"
-  "normal i## ${note_time}"
+  "normal i## ${current_time}"
   "normal G2o"
   "normal zz"
   "startinsert"
