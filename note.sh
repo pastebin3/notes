@@ -19,5 +19,5 @@ layout=(
 # edit with your fave editor
 nvim "${layout[@]/#/+}" ${my_note}
 
-# make copies
+# make copies with diff extensions/locations
 tee ${note_name}.pdf ${note_name}.txt <${my_note} >/dev/null
