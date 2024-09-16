@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# date variables
+# some variables
 note_name="$(date +%d/%m/%Y)"
 note_title="$(date +%A,' '%d/%m/%Y)"
 note_time="$(date +%H:%M)"
