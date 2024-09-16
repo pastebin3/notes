@@ -1,17 +1,23 @@
 #!/usr/bin/env bash
-current_date="$(date +%d-%m-%Y)"
-current_day="$(date +%A-%d-%B-%Y)"
-current_time="$(date +%H:%M)"
 
-my_note="$HOME/notes/${current_date}.md"
-[ ! -f ${my_note} ] && echo "## Your notes for: ${current_day}" >${my_note}
+# date variables
+note_name="$(date +%d/%m/%Y)"
+note_title="$(date +%A,' '%d/%m/%Y)"
+note_time="$(date +%H:%M)"
 
+# note name and direcotry
+my_note="$HOME/notes/${note_name}.md"
+[ ! -f ${my_note} ] && echo "## Your notes for: ${note_title}" >${my_note}
+
+# note layout
 layout=(
-	"normal G2o"
-	"normal i## ${current_time}"
-	"normal G2o"
-	"normal zz"
-	"startinsert"
+  "normal G2o"
+  "normal i## ${note_time}"
+  "normal G2o"
+  "normal zz"
+  "startinsert"
 )
 nvim "${layout[@]/#/+}" ${my_note}
-tee ${current_date}.pdf ${current_date}.txt <${my_note} >/dev/null
+
+# make multiple copies/extensions
+tee ${note_name}.pdf ${note_name}.txt <${my_note} >/dev/null
