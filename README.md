@@ -1,1 +1,1 @@
-This script will trigger a popup markdown note in neovim, the integration will be explained in an upcoming video.
+This script will trigger a pop up markdown note, the neovim integration will be followed in a walk through video.
