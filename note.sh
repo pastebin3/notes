@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
-# some variables
+# this script was created by pastebin3
+# it's also meant to work with lazyvim
+# a follow up tutorial will be made availae soon
+# let's begin by creating some variables
 note_name="$(date +%d-%m-%Y)"
 note_title="$(date +%A,' '%d/%m/%Y)"
 note_time="$(date +%H:%M)"
