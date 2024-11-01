@@ -1,7 +1,6 @@
-# ignore all files
-*.md
+.env/
+*.log
 *.pdf
 *.txt
-
-# don't ignore 
+*.md
 !README.md
