@@ -1,2 +1,6 @@
-# ignore md files
+# ignore all files
 *.md
+*.pdf
+*.txt
+# don't ignore 
+! README.md
