@@ -1,4 +1,4 @@
-.env/
+/gh
 *.log
 *.pdf
 *.txt
