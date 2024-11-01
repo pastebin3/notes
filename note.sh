@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# this script was created by pastebin3
+# this script was created by dj - multimedia22.be
 # it's also meant to work with lazyvim
 # a follow up tutorial will be made availae soon
 # let's begin by creating some variables
