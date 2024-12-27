@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # this script was created by dj - multimedia22.be
 # it's also meant to work with lazyvim
 # a follow up tutorial will be made available soon
